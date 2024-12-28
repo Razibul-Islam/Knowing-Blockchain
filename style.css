@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    color: #4D4D4D;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.text {
+    color: #4D4D4D;
+    font-weight: 500;
+}
+
+/* Navbar Starts */
+
+.navbar {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links li button {
+    background-color: #ABBED166;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Navbar Ends */
+
+/* Banner Start */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.banner.content {
+    flex: 1;
+}
+
+.banner .img {
+    flex: 1;
+}
+
+.banner .content .banner-header {
+    font-size: 44px;
+}
+
+.banner .content .banner-text {
+    font-size: 18px;
+}
+
+.banner .content button {
+    background-color: #ABBED166;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Banner Ends */
+
+/* Our Client Start */
+
+.client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.client-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+.client-img .img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+/* Our Client End */
+
+/* Power Blockchain Start */
+
+.power-blockchain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.power-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 20px;
+}
+
+.power-header span {
+    display: block;
+}
+
+.power-blockchain-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.power-blockchain-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+    padding: 15px 45px;
+    text-align: center;
+}
+
+.power-blockchain-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.card-header {
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+/* Power Blockchain End */
+
+/* Helping Blockchain Start */
+
+.helping-blockchain-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.helping-blockchain {
+    flex: 1;
+    padding: 20px;
+}
+
+.helping-blockchain-cards {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.helping-blockchain-cards .helping-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.helping-blockchain-cards .helping-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+}
+
+.helping-blockchain-cards .helping-card .helping-header {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+/* Helping Blockchain Ends */
+
+/* Blockcain Feature Start */
+
+.blockchain-feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.blockchain-feature .feature-text {
+    text-align: center;
+}
+
+.blockchain-feature-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.blockchain-feature-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-align: center;
+    position: relative;
+}
+
+.blockchain-feature-card .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.blockchain-feature-card .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.blockchain-feature-card .content {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 50px 20px;
+    width: 80%;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.blockchain-feature-card .content:hover {
+    background: #CCC1C1FA;
+    transition: 0.3s;
+}
+
+.blockchain-feature-card .content a {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #4CAF4F;
+}
+
+/* Blockcain Feature End */
+
+/* Contact form Start */
+
+.contact {
+    margin-top: 150px;
+}
+
+.contact .contact-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact .contact-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact .contact-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact .contact-form .contact-img {
+    flex: 1;
+}
+
+.contact .contact-form .contact-img img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+
+}
+
+.contact .contact-form .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    flex: 1;
+}
+
+.contact .contact-form .form .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact .contact-form .form .form-input:focus {
+    border: 2px solid #ccc;
+}
+
+.contact .contact-form .form .form-btn {
+    background-color: #ABBED166;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+/* Contact form End */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 100px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer-logo p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 15px;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li a {
+    margin: 25px 0;
+    text-align: start;
+    color: #f4f4f4;
+    display: block;
+}
+
+.footer-links.subscribe {
+    margin-bottom: 0;
+    text-align: start;
+}
+
+.footer-links.subscribe p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #ccc;
+    text-align: start;
+}
+
+.footer-links.subscribe input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-links.subscribe button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-links.subscribe button:hover {
+    background-color: #ff4500;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    br {
+        display: none;
+    }
+
+    p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+        padding-left: 0;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .banner .img {
+        margin-top: 20px;
+    }
+
+    .banner .img img {
+        width: 100%;
+    }
+
+    .client-img {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .power-blockchain-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .helping-blockchain-container {
+        flex-direction: column;
+    }
+
+    .helping-blockchain-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .blockchain-feature-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .blockchain-feature-card {
+        margin-bottom: 100px;
+
+    }
+
+    .contact {
+        padding: 20px;
+    }
+
+    .contact .contact-form {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links ul li a {
+        margin: 10px 0;
+    }
+
+    .footer-links.subscribe input[type="email"] {
+        width: 100%;
+    }
+}
